@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!--Escolhi uma pagina de checkout pra aprender mesmo como se faz, 
+não tive nenhuma super ideia ainda-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Check-out com o cartão</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>Checkout</h1>
+
+  
+  <main>
+    <section>
+      
+      <form id="formulario" class="formulario">
+        <h2>Informações de pagamento: </h2>
+        <h3>Total $6.95</h3>
+        <label for="inputNumero">Número do cartão</label>
+        <input type="text" id="inputNumero" placeholder="digite o número" maxlength="16" autocomplete="off"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+        <label for="inputNome">Nome do titular</label>
+        <input type="text" id="inputNome" placeholder="digite o nome" autocomplete="off">
+        <div class="expirar cartão">
+        <div class="expirar cartão label"> Validade 
+          <div class="expirarcartaoMes">
+            <div class="expirarcartaomeslabel">MÊS</div>
+            <select class="expirarMesSelecao">
+              <option value="01">01</option>
+              <option value="02">03</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="expirarcartaoAno">
+            <div class="expirarcartaoAnolabel">ANO</div>
+            <select class="expirarcartaoAnoSelecao">
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+            </select>
+          </div>
+            <div><label for="CVC">CVC</label>
+            <section>
+            <input type="tel" id="CVC" placeholder="3 dígitos" maxlength="3" onkeypress="
+                  return event.charCode >= 48 && event.charCode <= 57">
+                <button id="botao"> Ok </button>
+               <p id="mensagem"></p>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
