@@ -7,7 +7,7 @@ import validator from './validator.js';
 const numeroCartao = document.getElementById("inputNumero");
 const alerta = document.getElementById("mensagem");
 const button = document.getElementById("botao");
-button.addEventListener("click", validar);
+button.addEventListener("submit", validar);
 
 
   

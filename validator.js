@@ -1,9 +1,9 @@
 const validator = {
   isValid (creditCardNumber){
-    const arrayNumbers = [];
-    for (let i = 0; i < creditCardNumber.length; i++){
-      const digitos = parseInt(creditCardNumber[i]);
-      arrayNumbers.push(digitos);
+    const arrayNumbers = []; //uma array pra receber os numeros do cartao
+    for (let i = 0; i < creditCardNumber.length; i++){ //
+      const digitos = parseInt(creditCardNumber[i]); // o parseInt converte as strings em numeros inteiros 
+      arrayNumbers.push(digitos);//
     }
     const reverseNumber = arrayNumbers.reverse();
     for (let i = 0; i < reverseNumber.length; i++){
