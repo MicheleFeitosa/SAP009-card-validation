@@ -17,10 +17,8 @@ A validação é feito pelo algoritmo de luhn através do validator(isvalid) e o
   
   Materias usados no aprendizado e aplicação do projeto: 
   
-  as referências da Laboratória
-  o MDN (html/css/javascript)
-  Os cursos do Gustavo Guanabara 
-  e a plataforma W3schools
-  
-  
+  as referências da Laboratória;
+  o MDN (html/css/javascript);
+  Os cursos do Gustavo Guanabara ;
+  e a plataforma W3schools.
 
